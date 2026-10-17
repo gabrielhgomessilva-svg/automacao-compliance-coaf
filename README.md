@@ -10,7 +10,7 @@ Todo dia era preciso montar, uma a uma, a planilha de classificação de risco d
 
 ## Como funciona
 
-![Fluxo](docs/img/fluxo.png)
+![Fluxo](fluxo.png)
 
 1. **Extração:** consulta os borderôs concluídos do dia (factoring e FIDC).
 2. **Cruzamento:** busca risco, motivo e CNPJ do cliente na planilha de controle de risco.
@@ -21,7 +21,7 @@ O usuário só escolhe o dia (Enter = hoje); as operações são encontradas soz
 
 ## Regras de negócio
 
-![Regras](docs/img/regras.png)
+![Regras](regras.png)
 
 | Situação | O que o programa faz | Resultado |
 |---|---|---|
@@ -35,7 +35,7 @@ O limite de pagamento a terceiro é configurável (`LIMITE_TERCEIRO`).
 
 ## Segurança
 
-![Segurança](docs/img/seguranca.png)
+![Segurança](seguranca.png)
 
 - Somente **consultas de leitura** (`SELECT`), com `READ UNCOMMITTED` e `LOCK_TIMEOUT`, sem bloquear quem usa o sistema.
 - Consultas **parametrizadas** (sem concatenar texto em SQL).
