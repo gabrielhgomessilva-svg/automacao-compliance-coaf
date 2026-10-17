@@ -1,0 +1,27 @@
+# Configuração real (contém servidor, caminhos e possivelmente credenciais)
+config.ini
+
+# Dados e planilhas da empresa
+modelo/
+*.xls
+*.xlsx
+*.xlsm
+*.pdf
+registro.log
+*.log
+
+# Build do PyInstaller
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / sistema
+.vscode/
+.idea/
+Thumbs.db
